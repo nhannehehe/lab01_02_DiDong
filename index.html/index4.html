@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculateTipAndTotal(bill) {
+            // Toan tu 3 ngoi
+            const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+
+            // Tong tien
+            const total = bill + tip;
+            console.log(`The bill was ${bill}, the tip was ${tip.toFixed(2)}, and the total value ${total.toFixed(2)}`);
+        }
+
+        // Test data
+        calculateTipAndTotal(275); // Test 275
+        calculateTipAndTotal(40); // Test 40
+        calculateTipAndTotal(430); // Test 430
+    </script>
+</body>
+
+</html>
